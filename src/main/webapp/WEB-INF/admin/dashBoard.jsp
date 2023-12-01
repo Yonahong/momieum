@@ -664,23 +664,12 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, p, a, .chat {
     }
 
     new Chart(stackedBarChartCanvas, {
-    	  type: 'bar',
-    	  data: stackedBarChartData,
-    	  options: {
-    	    ...stackedBarChartOptions, // 스프레드 연산자를 사용하여 옵션을 통합
-    	    legend: {
-    	      labels: {
-    	        fontColor: 'black',
-    	        fontFamily: "'GmarketSansMedium', cursive"
-    	      }
-    	    },
-    	    tooltips: {
-    	      bodyFontFamily: "'GmarketSansMedium', cursive"
-    	    }
-    	  }
-    	})
-
-
+      type: 'bar',
+      data: stackedBarChartData,
+      options: stackedBarChartOptions
+      
+    })
+  })
   
   
   
